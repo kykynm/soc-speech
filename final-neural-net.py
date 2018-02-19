@@ -281,7 +281,7 @@ x = np.asarray(lis)
 y = np.asarray(lis2)
 x = np.transpose(x)
 y = np.transpose(y)
-x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=10)
+x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=2)
 
 x_train = Variable(torch.FloatTensor(x_train)) #input 
 y_train = Variable(torch.FloatTensor(y_train)) #output
